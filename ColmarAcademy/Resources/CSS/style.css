@@ -1,0 +1,470 @@
+/* Universal */
+
+body{
+  color: #535559;
+  font-family: "Open Sans";
+  text-align: left;
+  background-color: #f7f8f9;
+}
+
+.container{
+  display: flex;
+}
+
+h1, h2{
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.light{
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 450px){
+  h1, h2{
+    font-size: 2rem;
+  }
+  h3{
+    font-size: 1.3rem;
+  }
+}
+
+/* Header */
+
+header{
+  height: 64px;
+  background-color: white;
+}
+
+header nav{
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav div{
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  font-size: 1.4rem;
+  margin-left: 24px;
+}
+
+#academy{
+  font-weight: lighter;
+}
+
+.menu{
+  font-family: "Roboto", sans-serif;
+}
+
+.menu ul li{
+  display: inline;
+  padding: 0 2px;
+  font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 651px){
+  #mobileheader{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  #desktopheader{
+    display: none;
+  }
+  #mobileheader{
+    justify-content: space-around;
+    height: 64px;
+  }
+}
+
+/* Main Banner */
+
+#banner{
+  background-color: #cccdce;
+}
+
+#banner img{
+  width: 60%;
+  height: 60%;
+  margin: 32px 40px 32px 24px;
+}
+
+#learn{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+}
+
+#learn h1{
+  margin: 10px 10px 10px 0;
+  line-height: 1.15;
+}
+
+#learn p{
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 10px 10px 10px 0;
+}
+
+.button{
+  margin: 20px 10px 10px 0px;
+  background-color: #4a4c4f;
+  text-align: center;
+  width: 90%;
+}
+
+.button p{
+  margin: 8px auto;
+  color: #cccdce;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 650px){
+  #banner{
+    flex-direction: column;
+  }
+  #banner img{
+    width: 100%;
+    margin: 0;
+  }
+  #learn{
+    padding: 32px 16px;
+    padding-bottom: 0;
+    width: 100%;
+  }
+  #learn h1{
+    line-height: 1.4;
+  }
+  .button{
+    background-color: gray;
+    margin-bottom: 32px;
+  }
+  .button p{
+    color: white;
+  }
+}
+
+/* Secondary Banner, Information Section */
+/* Main Card */
+
+#secondary{
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
+#maincard{
+  flex-direction: column;
+  width: 60%;
+  padding: 32px 24px 40px 24px;
+  border-right: 1px solid lightgray;
+}
+
+#maincard img{
+  margin-bottom: 32px;
+  width: 100%;
+  height: 58%;
+}
+
+#maincard h2{
+  margin: 0 0 24px 0;
+}
+
+#maincard p{
+  margin-bottom: 16px;
+}
+
+#maincard span{
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 40px;
+}
+
+@media only screen and (max-width: 1050px){
+  #maincard img{
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 950px){
+  #maincard img{
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 850px){
+  #maincard img{
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  #maincard{
+    display: none;
+  }
+}
+
+/* Side Cards */
+
+#sidecards{
+  flex-direction: column;
+  width: 423px;
+  padding-top: 16px;
+  margin: 0 auto;
+}
+
+.sidecard{
+  display: flex;
+  padding: 16px auto;
+  border-right: 1px solid lightgray;
+}
+
+.sidecard img{
+  width: 35%;
+  height: 50%;
+  margin: 16px 24px 16px 16px;
+}
+
+.sidecard .text{
+  margin-right: 10px;
+}
+
+.sidecard h3{
+  margin-bottom: 8px;
+}
+
+.sidecard p{
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.readmore{
+  color: #049dd1;
+}
+
+#guest{
+  background-color: #d4d4d6;
+}
+
+#orientation, #campus{
+  border-bottom: 1px solid lightgray;
+}
+
+@media only screen and (min-width: 651px){
+  .sidecard .mobile{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  #sidecards{
+    padding: 0;
+    padding-bottom: 32px;
+    }
+  .sidecard{
+    flex-direction: column;
+    border: 0;
+    padding: 16px;
+  }
+  .sidecard .desktop{
+    display: none;
+  }
+  .sidecard img{
+    width: 100%;
+    margin: 0;
+  }
+  #guest{
+    background-color: #f7f8f9;
+  }
+  .text{
+    padding-left: 16px;
+  }
+  .text h3{
+    font-size: 1.25rem;
+  }
+}
+
+/* Courses Section */
+
+#learning{
+  flex-direction: column;
+  background-color: #eaebed;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
+#learning h2{
+  margin: 32px auto;
+}
+
+#cards{
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+
+.card{
+  margin: 10px 16px;
+  width: 300px;
+  background-color: white;
+}
+
+.card img{
+  width: 100%;
+}
+
+.card .text{
+  margin: 16px auto 24px 16px;
+}
+
+.card p{
+  margin-top: 8px;
+}
+
+@media only screen and (max-width: 650px){
+  #learning{
+    background-color: #f7f8f9;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    }
+  #learning h2{
+    margin-bottom: 16px;
+  }
+  .card img{
+    display: none;
+  }
+  .card span{
+    display: none;
+  }
+  .card p{
+    display: none;
+  }
+  .card{
+    background-color: #cccdce;
+  }
+}
+
+/* Thesis Section */
+
+#thesis{
+  flex-direction: column;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
+#thesis h2{
+  margin: 32px auto;
+}
+
+#mainthesis{
+  margin-left: 24px;
+  margin-right: 16px;
+  margin-bottom: 32px;
+  width: 60%;
+}
+
+#mainthesis p{
+  width: 95%;
+}
+
+#mainthesis video{
+  width: 100%;
+  background-color: #d4d4d6;
+  height: 28rem;
+}
+
+#sidetheses{
+  flex-direction: column;
+}
+
+.sidethesis{
+  display: flex;
+  width: 423px;
+  height: 168px;
+}
+
+.sidethesis img{
+  width: 35%;
+  margin: 16px 16px;
+}
+
+.sidethesis .text{
+  margin: 25px 0;
+}
+
+.sidethesis h3{
+  margin-bottom: 0;
+}
+
+.sidethesis p{
+  margin-top: 6px;
+}
+
+#fisma{
+  background-color: #d4d4d6
+}
+
+@media only screen and (max-width: 950px){
+  #mainthesis video{
+    height: 18rem;
+  }
+  #mainthesis{
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 750px){
+  #mainthesis video{
+    height: 18rem;
+  }
+  #mainthesis h3, #mainthesis p{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  #sidetheses{
+    display: none;
+  }
+  #mainthesis{
+    width: 100%;
+    margin: 0 0 24px 0;
+  }
+  #mainthesis h3{
+    display: none;
+  }
+  #mainthesis p{
+    display: none;
+  }
+  #mainthesis video{
+    height: 100%;
+  }
+}
+
+/* Footer */
+
+footer nav{
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px 0 24px;
+  font-size: 0.8rem;
+  border-top: 1px solid lightgray;
+}
+
+.footermenu ul li{
+  display: inline;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 450px){
+  .footermenu{
+    display: none;
+  }
+  #copyright{
+    padding: 16px auto;
+  }
+}
